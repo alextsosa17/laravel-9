@@ -1,5 +1,9 @@
+@extends('layouts.app')
+@section('title','Blog')
+@section('meta-desciption', 'Blog meta-description')
 
-@include('partials.navigation')
+@section('content')
 <h1>
     blog
 </h1>
+@endsection
