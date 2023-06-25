@@ -10,13 +10,12 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    <meta name="meta-description" content= "@yield('meta-desciption', 'Default meta description')">
-</head>
+    <meta name="meta-description" content="{{ $attributes['meta-description'] ?? 'Default meta description' }}" /></head>
 
 <body>
     
-   @include('partials.navigation')     <!-- {{-- aca estoy utilizando un  comentario con el modelo de plantillas blade--}} -->
-    {{$slot ?? 'slot por defecto'}} {{-- asi imprimo la variable reservada para mis componentes s-->
+   {{-- @include('partials.navigation')     <!-- aca estoy utilizando un  comentario con el modelo de plantillas blade --> --}}
+    {{$attributes['']}} {{-- asi imprimo la variable reservada para mis componentes s-->
      <!-- //aqui queremos que se imprima el contenido variable de la plantilla -->
     --}}
 

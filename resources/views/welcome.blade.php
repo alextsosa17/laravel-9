@@ -1,7 +1,3 @@
-{{--<x-slot name="title">
-    home    
-</x-slot>
---}}
-<x-layout title="Home" > {{--puedo solamente agregarle atributos y usarlos como variables en mi vista principal --}}
+<x-layout title="Home" meta-description="Home-description">
     <h1>Home</h1>
-</x-layout>|
+</x-layout>
