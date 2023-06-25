@@ -10,7 +10,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    <meta name="meta-description" content= "@yield('meta-desciption', 'Default meta description')">
+    <meta name="description" content= @yield('meta-desciption', 'Default meta description')">
 </head>
 
 <body>

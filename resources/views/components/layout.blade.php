@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title')</title>
+    <title>{{$title}} </title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -14,13 +14,11 @@
 </head>
 
 <body>
-
-    <!-- {{--@include('partials.navigation') {{--menu de navegacion--}}--}} -->
-    {{-- aca estoy utilizando un  comentario con el modelo de plantillas blade--}}
-    {{$slot}} <!-- asi imprimo la variable reservada para mis componentes s-->
-
+    
+   @include('partials.navigation')     <!-- {{-- aca estoy utilizando un  comentario con el modelo de plantillas blade--}} -->
+    {{$slot}} {{-- asi imprimo la variable reservada para mis componentes s-->
      <!-- //aqui queremos que se imprima el contenido variable de la plantilla -->
-
+    --}}
 
 
 
