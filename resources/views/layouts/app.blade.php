@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <meta name="description" content= @yield('meta-desciption', 'Default meta description')">
+    {{--Esto porque lo haces? 
+    dale que vos programas mejor que esta basura , ponele onda usa la cabeza mandale fruta--}}
 </head>
 
 <body>
