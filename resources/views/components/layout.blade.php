@@ -13,9 +13,9 @@
     <meta name="meta-description" content="{{ $attributes['meta-description'] ?? 'Default meta description' }}" /></head>
 
 <body>
-    
+    <x-navigation/>
    {{-- @include('partials.navigation')     <!-- aca estoy utilizando un  comentario con el modelo de plantillas blade --> --}}
-    {{$attributes['']}} {{-- asi imprimo la variable reservada para mis componentes s-->
+    {{$slot}} {{-- asi imprimo la variable reservada para mis componentes s-->
      <!-- //aqui queremos que se imprima el contenido variable de la plantilla -->
     --}}
 
