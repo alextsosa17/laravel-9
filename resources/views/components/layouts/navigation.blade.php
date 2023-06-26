@@ -6,3 +6,4 @@
     <ul><a href="{{route('about')}}">About</a></ul>
 </li>
 </nav>
+    

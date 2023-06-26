@@ -5,23 +5,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title')</title>
+    <title>{{$attributes['title']}}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    <meta name="description" content= @yield('meta-desciption', 'Default meta description')">
+    <meta name="description" content="{{$metaDescription ?? 'default meta-description'}}" {{--$attributes['meta-description'] es la otra ma
+    manera de enviar una propiedad de un componente --}}> 
 </head>
 
 <body>
+    <x-layouts.navigation/> {{-- menu de navegacion en el archivo navigation.blade.php --}}
+    <pre>
+        {{$attributes}}
+    </pre>
 
-    @include('partials.navigation') <!--menu de navegacion -->
-    
-
-
-     <!-- //aqui queremos que se imprima el contenido variable de la plantilla -->
-    @yield('content')
-
+    {{$slot}}
 
 
 

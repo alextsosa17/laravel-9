@@ -1,10 +1,5 @@
-@extends('layouts.app')
-@section('title','About') {{--titulo--}}
-@section('meta-desciption', 'about meta-description') {{--meta descripcion--}}
-@section('content') {{--conetnido de mi tamplate--}}
-<h1>
-    about
-</h1>
-@endsection
-
-
+<x-layouts.app 
+:title="'About'" 
+:meta-description="'About-description'">
+    <h1>About</h1>
+</x-layouts.app>

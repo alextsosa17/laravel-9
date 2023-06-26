@@ -1,9 +1,11 @@
-@extends('layouts.app')
-@section('title','Contacto')
-@section('meta-desciption', 'Contact meta-description')
+<x-layouts.app suma="2+2" 
+:title="'Contact'" 
+:meta-description="'Conctact-description'" 
+>
+    <h1>Contact</h1>
+</x-layouts.app>
 
-@section('content')
-<h1>
-    contacto
-</h1>
-@endsection
+
+{{--  <x-layouts.app suma="2+2" :title="'Contact'" :meta-description="'jose-description'">
+    <h1>Contact</h1>
+</x-layouts.app>   --}}
