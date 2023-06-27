@@ -6,6 +6,3 @@
 </x-layouts.app>
 
 
-{{--  <x-layouts.app suma="2+2" :title="'Contact'" :meta-description="'jose-description'">
-    <h1>Contact</h1>
-</x-layouts.app>   --}}
