@@ -16,12 +16,12 @@
 
 <body>
     <x-layouts.navigation/> {{-- menu de navegacion en el archivo navigation.blade.php --}}
-    <pre>
-        {{$attributes}}
-    </pre>
+    {{--  <pre>
+        {{$attributes}} <!--{{adentro de esta variable tengo todo lo que le pase via atributo de mi componente}}-->
+    </pre>  --}}
 
     {{$slot}}
-
+ 
 
 
 </body>
