@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PostController; //cada clase que uso debe ser importada en los archivos correspondientes
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,16 +23,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('home');
 
-Route::get('/blog', function () {
-    $posts = [
-        ['title' => 'First post'],
-        ['title' => 'Second post'],
-        ['title' => 'Third  post'],
-        ['title' => 'Fourth post'],
-    ];
-
-    return view('blog',['posts' => $posts]);
-})->name('blog'); //el tercer parametro es una variable que se envia a la vista
+Route::get('/blog',[PostController::class, 'index'])->name('blog'); //el tercer parametro es una variable que se envia a la vista
 
 Route::view('/contact', 'contact')->name('contact');
 
