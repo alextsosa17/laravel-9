@@ -1,7 +1,4 @@
-<x-layouts.app 
-    :title="'Home'" 
-    :meta-description="'Home-description'"
->
+<x-layouts.app :title="'Home'" :meta-description="'Home-description'">
     <h1>Home</h1>
 
 </x-layouts.app>

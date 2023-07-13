@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Http\Request;
+// use Illuminate\Http\Request; //pr ahora no estoy usando esta libreria
 
 
 class PostController extends Controller
@@ -12,6 +12,7 @@ class PostController extends Controller
         $posts = DB::table('posts')->get();
         
 
+        
         return view('blog', ['posts' => $posts]);
     }
 

@@ -23,7 +23,7 @@ use App\Http\Controllers\PostController; //cada clase que uso debe ser importada
 
 Route::view('/', 'welcome')->name('home');
 
-Route::get('/blog',[PostController::class, 'index'])->name('blog'); //el tercer parametro es una variable que se envia a la vista
+Route::get('/blog',[PostController::class, 'index'])->name('blog'); 
 
 Route::view('/contact', 'contact')->name('contact');
 
