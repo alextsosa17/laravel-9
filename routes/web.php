@@ -25,6 +25,8 @@ Route::view('/', 'welcome')->name('home');
 
 Route::get('/blog',[PostController::class, 'index'])->name('blog'); 
 
+Route::get('/blog/1', [PostController::class , 'show']);
+
 Route::view('/contact', 'contact')->name('contact');
 
 Route::view('/about', 'about')->name('about');

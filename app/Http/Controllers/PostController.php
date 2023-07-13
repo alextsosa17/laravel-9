@@ -13,4 +13,11 @@ class PostController extends Controller
         
         return view('blog', ['posts' => $posts]);
     }
+
+    public function show()
+    {
+        
+        return 'Post Detail';
+
+    }
 }  
